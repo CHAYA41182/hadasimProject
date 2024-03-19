@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const memberSchema = new Schema({
+    tz: {
+        type: String,
+        required: true,
+        unique: true
+    },
     firstName: {
         type: String,
         required: true
@@ -23,7 +28,7 @@ const memberSchema = new Schema({
         type: String,
         required: true
     },
-    
+
     coronaDetiles: {  
 
         isImmune: {
