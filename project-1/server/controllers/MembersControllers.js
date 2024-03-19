@@ -9,12 +9,12 @@ const getMembers = async (req, res) => {
     }
 };
 
-const getMemberById = async (req, res) => {
+const getMemberByTz = async (req, res) => {
     try {
-        const member = await MemberTable.findById(req.params.id);
+        const member = await MemberTable.findOne({ tz: req.params.tz });
         res.json(member);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
-}
+};
 
