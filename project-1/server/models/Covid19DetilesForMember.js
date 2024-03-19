@@ -38,6 +38,4 @@ const covid19DetilesForMemberSchema = new Schema({
         required: true
     },
 }
-
-
 );
