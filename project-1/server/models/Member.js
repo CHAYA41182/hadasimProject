@@ -26,7 +26,6 @@ const memberSchema = new Schema({
     },
     email: {
         type: String,
-        required: true
     },
 
     coronaDetiles: {  
