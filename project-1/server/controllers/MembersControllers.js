@@ -24,7 +24,6 @@ const getMemberByTz = async (req, res) => {
 
 const createMember = async (req, res) => {
     const { tz, firstName, lastName, dateBirth, gender, email, coronaDetiles } = req.body;
-    const { isImmune, isRecovered, isSerology, DateOfIllness, DateOfRecovery, CurrentStatus } = coronaDetiles;
     // validation
     if (!tz || !firstName || !lastName || !dateBirth || !gender) {
         return res.status(400).json({ message: 'All fields are required' });
@@ -43,19 +42,9 @@ const createMember = async (req, res) => {
         return res.status(400).json({ message: 'Invalid email' });
     }
 
-    // validate coronaDetiles
-    if(coronaDetiles){
-        if(isImmune){
-            
-        }
-        if(isRecovered){
-            if(!DateOfRecovery){
-                return res.status(400).json({ message: 'DateOfRecovery is required' });
-            }
-            if(!DateOfIllness){
-                return res.status(400).json({ message: 'DateOfIllness is required' });
-            }
-        }
+
+
+        
         
     }
 

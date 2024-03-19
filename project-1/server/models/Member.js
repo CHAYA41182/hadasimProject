@@ -42,13 +42,7 @@ const memberSchema = new Schema({
             default: false,
             required: true
         },
-    
-        isRecovered: {
-            type: Boolean,
-            default: false,
-            required: true
-        },
-    
+
         isSerology: {
             type: Boolean,
             default: false,
@@ -63,7 +57,6 @@ const memberSchema = new Schema({
             type: Date,
             required: false
         },
-        // תאריך חיסון
         DateOfVaccine1: {
             type: Date,
             required: false
