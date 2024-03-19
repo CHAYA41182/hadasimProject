@@ -73,12 +73,12 @@ const memberSchema = new Schema({
             type: Date,
             required: false
         },
-    
+
         CurrentStatus: {
             type: String,
-            enum: ['Ill', 'Recovered', 'Immune'],
+            enum: ['Healthy', 'Sick', 'Recovered'],
             required: true
-        },
+        }
     }
 });
 
