@@ -31,29 +31,48 @@ const memberSchema = new Schema({
 
     coronaDetiles: {  
 
-        isImmune: {
+        isImmune1: {
             type: Boolean,
-            default: false
+            default: false,
+            required: true
+
+        },
+
+        isImmune2: {
+            type: Boolean,
+            default: false,
+            required: true
         },
     
         isRecovered: {
             type: Boolean,
-            default: false
+            default: false,
+            required: true
         },
     
         isSerology: {
             type: Boolean,
-            default: false
+            default: false,
         },
     
         DateOfIllness: {
             type: Date,
-            required: true
+            required: false
         },
     
         DateOfRecovery: {
             type: Date,
-            required: true
+            required: false
+        },
+        // תאריך חיסון
+        DateOfVaccine1: {
+            type: Date,
+            required: false
+        },
+
+        DateOfVaccine2: {
+            type: Date,
+            required: false
         },
     
         CurrentStatus: {
