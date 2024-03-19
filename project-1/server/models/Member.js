@@ -24,6 +24,39 @@ const memberSchema = new Schema({
         required: true
     },
     
+    coronaDetiles: {  
+
+        isImmune: {
+            type: Boolean,
+            default: false
+        },
+    
+        isRecovered: {
+            type: Boolean,
+            default: false
+        },
+    
+        isSerology: {
+            type: Boolean,
+            default: false
+        },
+    
+        DateOfIllness: {
+            type: Date,
+            required: true
+        },
+    
+        DateOfRecovery: {
+            type: Date,
+            required: true
+        },
+    
+        CurrentStatus: {
+            type: String,
+            enum: ['Ill', 'Recovered', 'Immune'],
+            required: true
+        },
+    }
 });
 
 module.exports = mongoose.model('Member', memberSchema);
