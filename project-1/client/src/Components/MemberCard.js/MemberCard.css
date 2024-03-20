@@ -1,0 +1,44 @@
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.member-card p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.member-card__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.member-card__actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.member-card__actions button:hover {
+    background-color: #0056b3;
+}
+
+.member-card__actions button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
