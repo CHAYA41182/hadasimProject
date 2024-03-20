@@ -7,7 +7,7 @@ const getMembers = async () => {
 }
 
 const getMember = async (id) => {
-    const member = await Member.findById(req.params.id).lean();
+    const member = await Member.findById(id).lean();
     if (member) {
         return member;
     } else {
@@ -52,9 +52,3 @@ const deleteMember = async (id) => {
 }
 
 module.exports = { getMembers, getMember, createMember, updateMember, deleteMember };
-
-
-
-
-
-
