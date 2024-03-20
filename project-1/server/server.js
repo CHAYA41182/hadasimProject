@@ -4,13 +4,12 @@ const cors = require('cors')
 const connectDB = require('./config/connectDB');
 const corsOption = require('./config/corsOption');
 const { default: mongoose } = require('mongoose');
+const MemberRoutes = require('./routes/MemberRoutes');
 
 const app = express();
 
 
 const PORT = process.env.PORT || 7001
-
-
 
 connectDB()
 
@@ -18,10 +17,7 @@ app.use(cors(corsOption))
 app.use(express.json())
 app.use(express.static("public"))
 
-app.get("/",(req,res)=>{
-    res.send("home page")
-})
-
+app.use('/api/members',MemberRoutes)
 
 
 
