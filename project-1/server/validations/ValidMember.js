@@ -34,10 +34,10 @@ exports.validCreateMember = (bodyData) => {
                     date: Joi.date().max('now').required().messages({
                         'date.max': `Vaccination date cannot be in the future`
                     }),
-                    manufacturer: Joi.string().allow('')
+                    manufacturer: Joi.string().allow('') // Not required
                 })
             ),
-            positiveTestDate: Joi.date().max('now').allow('').messages({
+            positiveTestDate: Joi.date().max('now').allow('').messages({ 
                 'date.max': `Positive test date cannot be in the future`
             }),
             recoveryDate: Joi.date().max('now').allow('').messages({
