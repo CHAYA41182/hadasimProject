@@ -37,7 +37,7 @@ exports.validCreateMember = (bodyData) => {
                     manufacturer: Joi.string().allow('') // Not required
                 })
             ),
-            positiveTestDate: Joi.date().max('now').allow('').messages({ 
+            positiveTestDate: Joi.date().max('now').allow('').messages({
                 'date.max': `Positive test date cannot be in the future`
             }),
             recoveryDate: Joi.date().max('now').allow('').messages({
@@ -85,10 +85,18 @@ exports.validUpdateMember = (bodyData) => {
                     manufacturer: Joi.string().allow('')
                 })
             ),
-            positiveTestDate: Joi.date().max('now').messages({
+            positiveTestDate: Joi.date().max('now').allow('').messages({
                 'date.max': `Positive test date cannot be in the future`
             }),
-            recoveryDate: Joi.date().max('now').messages({
+            recoveryDate: Joi.date().max('now').allow('').custom((value, helpers) => {
+                if (value && (!bodyData.coronaDetails || !bodyData.coronaDetails.positiveTestDate)) {
+                    return helpers.message(`If a recovery date is provided, a positive test date must also be provided`);
+                }
+                if (bodyData.coronaDetails && bodyData.coronaDetails.positiveTestDate && value < bodyData.coronaDetails.positiveTestDate) {
+                    return helpers.message(`Recovery date cannot be before the positive test date`);
+                }
+                return value;
+            }).messages({
                 'date.max': `Recovery date cannot be in the future`
             })
         })
