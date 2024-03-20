@@ -1,5 +1,5 @@
 const Member = require('../models/Member');
-const {validCreateMember,validUpdateMember} = require('../validation/MemberValidation')
+const {validCreateMember,validUpdateMember} = require('../validations/ValidMember')
 
 const getMembers = async () => {
     const members = await Member.find().lean();
