@@ -23,8 +23,9 @@ const getMember = async (req, res) => {
 }
 
 const createMember = async (req, res) => {
-    const { firstName, lastName, tz, email, mobilePhone, coronaDetails } = req.body;
+    const { firstName, lastName, tz, mobilePhone, coronaDetails, dateBirth, address } = req.body;
     const { vaccinations, positiveTestDate, recoveryDate } = coronaDetails;
+    const { city, street, number } = address;
     vaccinations.map(vaccination => {
         const { date, manufacturer } = vaccination;
         return { date, manufacturer };
@@ -33,7 +34,12 @@ const createMember = async (req, res) => {
         firstName,
         lastName,
         tz,
-        email,
+        dateBirth,
+        address: {
+            city,
+            street,
+            number
+        },
         mobilePhone,
         coronaDetails: {
             vaccinations,
