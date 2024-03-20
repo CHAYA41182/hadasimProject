@@ -39,7 +39,7 @@ const validationSchema = Yup.object({
     .matches(/^[0-9]+$/, 'מספר הטלפון הנייד חייב להכיל ספרות בלבד'),
   coronaDetails: Yup.object({
     vaccinations: Yup.array()
-      .max(3, 'לא ניתן להזין יותר מ-3 חיסונים')
+      .max(4, 'לא ניתן להזין יותר מ-4 חיסונים')
       .of(
         Yup.object({
           date: Yup.date()
