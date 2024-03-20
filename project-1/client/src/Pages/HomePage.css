@@ -1,0 +1,30 @@
+.homepage-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .navigation-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navigation-menu li {
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
