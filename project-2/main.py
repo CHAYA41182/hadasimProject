@@ -38,8 +38,8 @@ if choiceShape == 1:
 elif choiceShape == 2:
     choiceAction = input("choose which action you want: 1 for calculate perimeter, 2 for print the triangle: ")
     if choiceAction == 1:
-        # Assuming that the triangle is a right triangle
-        print("perimeter: ", width + height + (width ** 2 + height ** 2) ** 0.5)
+        # Assuming that the triangle is an isosceles triangle
+        print("perimeter:", ((width / 2) ** 2 + height ** 2) ** 0.5 + width)
     else:
         if height * 2 < width:
             print("The triangle cannot be printed")
