@@ -22,7 +22,6 @@ app.use('/api/members',MemberRoutes)
 
 
 mongoose.connection.once('open',()=>{
-    console.log("connected to DB successfully")
     app.listen(PORT,()=>{
         console.log(`server is running on port ${PORT}`)
     })
