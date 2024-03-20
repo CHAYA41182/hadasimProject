@@ -1,5 +1,7 @@
 import './App.css';
-import HomePage from './Pages/HomePage';
+import MemberForm from './Components/MemberForm/MemberForm';
+import AddMember from './Pages/AddMember/AddMember';
+import HomePage from './Pages/HomePage/HomePage';
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom"
 
 
@@ -10,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/members" element={<h1>Members</h1>} />
-          <Route path="/add-member" element={<h1>Add Member</h1>} />
+          <Route path="/add-member" element={<AddMember />} />
         </Routes>
       </Router>
     </div>

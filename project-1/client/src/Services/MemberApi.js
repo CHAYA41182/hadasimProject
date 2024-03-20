@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-const baseURL = 'http://localhost:3001/api/members';
+const baseURL = 'http://localhost:7002/api/Members';
 
 const getMembers = async () => {
     try {

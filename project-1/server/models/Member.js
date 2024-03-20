@@ -62,7 +62,6 @@ const memberSchema = new Schema({
     },
     Phone: {
         type: String,
-        required: false,
         minlength: 9,
         maxlength: 10,
         validate: {
@@ -75,7 +74,6 @@ const memberSchema = new Schema({
     },
     mobilePhone: {
         type: String,
-        required: false,
         length: 10,
         validate: {
             validator: function (v) {
