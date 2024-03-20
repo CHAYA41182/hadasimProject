@@ -1,7 +1,18 @@
+*{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
 .homepage-container {
-    text-align: center;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
+  
   
   .navigation-menu ul {
     list-style-type: none;
