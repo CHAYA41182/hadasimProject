@@ -92,6 +92,6 @@ exports.validUpdateMember = (bodyData) => {
                 'date.max': `Recovery date cannot be in the future`
             })
         })
-    }).min(1); // At least one field required for update
+    });
     return memberSchema.validate(bodyData);
 }
