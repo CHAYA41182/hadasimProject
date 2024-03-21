@@ -52,10 +52,4 @@ const deleteMember = async (id) => {
     }
 };
 
-export default {
-    getMembers,
-    getMember,
-    addMember,
-    updateMember,
-    deleteMember
-};
+export { getMembers, getMember, addMember, updateMember, deleteMember };

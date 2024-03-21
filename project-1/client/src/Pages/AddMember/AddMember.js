@@ -1,11 +1,11 @@
 import MemberForm from "../../Components/MemberForm/MemberForm";
-import MemberApi from "../../Services/MemberApi";
+import {addMember} from "../../Services/MemberApi";
 
 const AddMember = () => {
     const handleSubmit = async (values) => {
         try {
             console.log(values);
-            const data = await MemberApi.addMember(values);
+            const data = await addMember(values);
             console.log("added member:", data);
         } catch (error) {
             console.log(error);

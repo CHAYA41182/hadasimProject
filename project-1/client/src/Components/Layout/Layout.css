@@ -1,0 +1,14 @@
+.layout {
+    display: flex;
+    flex-direction: column; /* Change this to 'row' if you want the menu on the left */
+    height: 100vh; 
+}
+
+.menue {
+    flex: 0; 
+}
+
+.outlet {
+    flex: 1; 
+    width: 100vw;
+}
