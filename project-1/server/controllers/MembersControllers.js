@@ -24,7 +24,17 @@ const createMember = async (req, res) => {
 }
 
 const updateMember = async (req, res) => {
-    const member = await MemberService.updateMember(req.params.id,req.body);
+    const { firstName, lastName, tz, address, dateBirth, phone, mobilePhone, coronaDetails} = req.body;
+    const {id} = req.params;
+    const {city, street, number} = address;
+    const {positiveTestDate, recoveryDate, vaccinations} = coronaDetails;
+    const newVaccinations = vaccinations.map(vaccination => {
+        const {manufacturer, date} = vaccination;
+        return {manufacturer, date};
+    });
+    const data = {firstName, lastName, tz, address: {city, street, number}, dateBirth, phone, mobilePhone, coronaDetails: {positiveTestDate, recoveryDate, vaccinations: newVaccinations}};
+
+    const member = await MemberService.updateMember(id, data);
     if (member.message) {
         res.status(400).json(member);
     } else {

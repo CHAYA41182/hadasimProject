@@ -60,7 +60,7 @@ const memberSchema = new Schema({
             message: props => `${props.value} is a future date`
         }
     },
-    Phone: {
+    phone: {
         type: String,
         minlength: 9,
         maxlength: 10,

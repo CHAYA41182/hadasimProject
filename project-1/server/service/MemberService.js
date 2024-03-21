@@ -1,5 +1,5 @@
 const Member = require('../models/Member');
-const {validCreateMember,validUpdateMember} = require('../validations/ValidMember')
+const { validCreateMember, validUpdateMember } = require('../validations/ValidMember')
 
 const getMembers = async () => {
     const members = await Member.find().lean();
@@ -16,8 +16,8 @@ const getMember = async (id) => {
 }
 
 const createMember = async (MemberData) => {
-    const {error} = validCreateMember(MemberData)
-    if(error) return {message:error.details[0].message}
+    const { error } = validCreateMember(MemberData)
+    if (error) return { message: error.details[0].message }
     const member = new Member(MemberData);
     try {
         const newMember = await member.save();
@@ -27,11 +27,15 @@ const createMember = async (MemberData) => {
     }
 }
 
-const updateMember = async (id,MemberData) => {
-    const {error} = validUpdateMember(MemberData)
-    if(error) return {message:error.details[0].message}
+const updateMember = async (id, MemberData) => {
+    const { error } = validUpdateMember(MemberData)
+    if (error) return { message: error.details[0].message }
+
     try {
-        const updatedMember = await Member.findByIdAndUpdate(id,MemberData,{new:true})
+        const updatedMember = await Member.findById(id);
+        
+        await updatedMember.save();
+
         return updatedMember;
     } catch (err) {
         return { message: err.message };
@@ -41,10 +45,10 @@ const updateMember = async (id,MemberData) => {
 const deleteMember = async (id) => {
     try {
         const deletedMember = await Member.findByIdAndDelete(id)
-        if(deletedMember){
+        if (deletedMember) {
             return deletedMember
         }
-        return {message:"Member not found"}
+        return { message: "Member not found" }
     }
     catch (err) {
         return { message: err.message };

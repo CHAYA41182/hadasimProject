@@ -65,7 +65,7 @@ exports.validUpdateMember = (bodyData) => {
         dateBirth: Joi.date().max('now').messages({
             'date.max': `Date of birth cannot be in the future`
         }),
-        Phone: Joi.string().min(9).max(10).pattern(/^[0-9]+$/).allow('').messages({
+        phone: Joi.string().min(9).max(10).pattern(/^[0-9]+$/).allow('').messages({
             'string.base': `Phone number must be a string`,
             'string.min': `Phone number must be at least 9 digits`,
             'string.max': `Phone number cannot be more than 10 digits`,

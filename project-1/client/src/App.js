@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom
 import MemberList from './Pages/MembersList.js/MemberList';
 import Layout from './Components/Layout/Layout';
 import SingleMember from './Pages/SingleMember/SingleMember';
+import UpdateMember from './Pages/UpdateMember/UpdateMember';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/members" element={<MemberList />} />
             <Route path="/add-member" element={<AddMember />} />
             <Route path="/members/:id" element={<SingleMember />} />
+            <Route path="/members/:id/edit" element={<UpdateMember />} />
           </Route>
         </Routes>
       </Router>
