@@ -76,7 +76,7 @@ const deleteMember = async (id) => {
 
 const uploadImage = async (id,file) => {
     const baseUrl = process.env.BASE_URL || 'http://localhost:7001';
-    const imagePath = `${baseUrl}/uploads/membersImages/${file.filename}`;
+    const imagePath = `${baseUrl}/uploads/memberImages/${file.filename}`;
     const member = await Member.findById(id);
     member.imageUrl = imagePath;
     await member.save();

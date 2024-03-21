@@ -12,19 +12,22 @@ const MemberCard = ({ member, onDelete }) => {
 
     return (
         <div className="member-card">
+            <img src={member.imageUrl?member.imageUrl:'http://localhost:3000/defultAvatar.png' } alt="member" className='image' />
             <div>
-                <h2>{`${member.firstName} ${member.lastName}`}</h2>
-                <p>{`מספר ת.ז: ${member.tz}`}</p>
-                <p>{member.phone ? `טלפון: ${member.phone}` : member.mobilePhone ? `טלפון נייד: ${member.mobilePhone}` : ''}</p>
-                <p>{`תאריך לידה: ${(new Date(member.dateBirth)).toLocaleDateString()}`}</p>
-            </div>
+                <div className='detiles'>
+                    <h2>{`${member.firstName} ${member.lastName}`}</h2>
+                    <p>{`מספר ת.ז: ${member.tz}`}</p>
+                    <p>{member.phone ? `טלפון: ${member.phone}` : member.mobilePhone ? `טלפון נייד: ${member.mobilePhone}` : ''}</p>
+                    <p>{`תאריך לידה: ${(new Date(member.dateBirth)).toLocaleDateString()}`}</p>
+                </div>
+                <div className='left'>
+                    <div className="member-card__actions">
+                        <button onClick={() => navigate(`/members/${member._id}`)}>צפייה</button>
+                        <button onClick={() => navigate(`/members/${member._id}/edit`)}>עריכה</button>
+                        <button onClick={handleDelete}>מחיקה</button>
 
-            {member.imageURL && <img src={member.imageURL} alt="member" />}
-
-            <div className="member-card__actions">
-                <button onClick={() => navigate(`/members/${member._id}`)}>צפייה</button>
-                <button onClick={() => navigate(`/members/${member._id}/edit`)}>עריכה</button>
-                <button onClick={handleDelete}>מחיקה</button>
+                    </div>
+                </div>
             </div>
         </div>
     );

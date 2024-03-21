@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {getMembers, deleteMember} from '../../Services/MemberApi'
+import { getMembers, deleteMember } from '../../Services/MemberApi'
 import MemberCard from '../../Components/MemberCard/MemberCard'
 import './MemberList.css';
 
@@ -27,9 +27,11 @@ const MemberList = () => {
     return (
         <div className="member-list">
             <h1>רשימת חברי קופת חולים</h1>
-            {members.map(member => (
-                <MemberCard key={member._id} member={member} onDelete={handleDelete} />
-            ))}
+            <div className="members">
+                {members.map(member => (
+                    <MemberCard key={member._id} member={member} onDelete={handleDelete} />
+                ))}
+            </div>
         </div>
     );
 }
