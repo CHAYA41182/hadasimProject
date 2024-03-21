@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import MemberForm from "../../Components/MemberForm/MemberForm";
-import { updateMember, getMember } from "../../Services/MemberApi";
+import { updateMember, getMember, uploadMemberImage } from "../../Services/MemberApi";
 import { useNavigate, useParams } from "react-router-dom";
 
 

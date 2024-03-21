@@ -45,6 +45,11 @@ const MemberForm = ({ initialValues, handleSubmit }) => {
                                 <ErrorMessage name="lastName" component="div" className="error" />
                             </div>
                             <div className="form-group">
+                                <label htmlFor="image">תמונה</label>
+                                <Field name="image" type="file" className="form-control" />
+                                <ErrorMessage name="image" component="div" className="error" />
+                            </div>
+                            <div className="form-group">
                                 <label htmlFor="tz">תעודת זהות</label>
                                 <Field name="tz" type="text" className="form-control" />
                                 <ErrorMessage name="tz" component="div" className="error" />

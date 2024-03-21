@@ -29,11 +29,11 @@ const validationSchema = Yup.object({
   dateBirth: Yup.date()
     .max(new Date(), 'תאריך הלידה לא יכול להיות בעתיד')
     .required('תאריך הלידה הוא שדה חובה'),
-  Phone: Yup.string() 
+  Phone: Yup.string()
     .min(9, 'מספר הטלפון חייב להכיל לפחות 9 ספרות')
     .max(10, 'מספר הטלפון לא יכול להכיל יותר מ-10 ספרות')
     .matches(/^[0-9]+$/, 'מספר הטלפון חייב להכיל ספרות בלבד'),
-    
+
   mobilePhone: Yup.string()
     .length(10, 'מספר הטלפון הנייד חייב להיות בדיוק 10 ספרות')
     .matches(/^[0-9]+$/, 'מספר הטלפון הנייד חייב להכיל ספרות בלבד'),
@@ -48,9 +48,12 @@ const validationSchema = Yup.object({
           manufacturer: Yup.string(),
         })
       ),
-      positiveTestDate: Yup.date().max(new Date(), 'תאריך הבדיקה החיובית לא יכול להיות בעתיד').max(Yup.ref('recoveryDate'), 'תאריך הבדיקה החיובית חייב להיות לפני תאריך ההחלמה'),
-      recoveryDate: Yup.date().max(new Date(), 'תאריך ההחלמה לא יכול להיות בעתיד'),
-    }),
-  });
+    positiveTestDate: Yup.date()
+      .max(new Date(), 'תאריך הבדיקה החיובית לא יכול להיות בעתיד'),
+    recoveryDate: Yup.date()
+    .max(new Date(), 'תאריך ההחלמה לא יכול להיות בעתיד')
+    .min(Yup.ref('positiveTestDate'), 'תאריך ההחלמה חייב להיות לאחר תאריך הבדיקה החיובית'),
+  }),
+});
 
 export default validationSchema;
