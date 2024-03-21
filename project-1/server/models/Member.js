@@ -127,7 +127,8 @@ const memberSchema = new Schema({
                 message: props => `${props.value} is a future date!`
             }
         }
-    }
+    },
+    imageUrl: String
 });
 
 module.exports = mongoose.model('Member', memberSchema);

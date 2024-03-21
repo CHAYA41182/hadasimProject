@@ -51,4 +51,14 @@ const deleteMember = async (req, res) => {
     }
 }
 
-module.exports = { getMembers, getMember, createMember, updateMember, deleteMember };
+const uploadImage = async (req, res) => {
+    const id = req.params.id;
+    if (!req.file) {
+        return res.status(400).json({message: 'No file uploaded'});
+    }
+    MemberService.uploadImage(id, req.file);
+
+    res.json({message: 'file uploaded successfully'});
+}
+
+module.exports = { getMembers, getMember, createMember, updateMember, deleteMember , uploadImage};

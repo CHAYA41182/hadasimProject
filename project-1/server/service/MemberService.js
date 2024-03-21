@@ -74,4 +74,13 @@ const deleteMember = async (id) => {
     }
 }
 
-module.exports = { getMembers, getMember, createMember, updateMember, deleteMember };
+const uploadImage = async (id,file) => {
+    const baseUrl = process.env.BASE_URL || 'http://localhost:7001';
+    const imagePath = `${baseUrl}/uploads/membersImages/${file.filename}`;
+    const member = await Member.findById(id);
+    member.imageUrl = imagePath;
+    await member.save();
+    return {message: 'file uploaded successfully'};
+}
+
+module.exports = { getMembers, getMember, createMember, updateMember, deleteMember, uploadImage };
