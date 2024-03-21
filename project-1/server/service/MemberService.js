@@ -33,6 +33,25 @@ const updateMember = async (id, MemberData) => {
 
     try {
         const updatedMember = await Member.findById(id);
+        if (!updatedMember) {
+            return { message: "Member not found" }
+        }
+        if (MemberData.firstName) updatedMember.firstName = MemberData.firstName;
+        if (MemberData.lastName) updatedMember.lastName = MemberData.lastName;
+        if (MemberData.tz) updatedMember.tz = MemberData.tz;
+        if (MemberData.phone) updatedMember.phone = MemberData.phone;
+        if (MemberData.mobilePhone) updatedMember.mobilePhone = MemberData.mobilePhone;
+        if (MemberData.dateBirth) updatedMember.dateBirth = MemberData.dateBirth;
+        if (MemberData.address) {
+            if (MemberData.address.city) updatedMember.address.city = MemberData.address.city;
+            if (MemberData.address.street) updatedMember.address.street = MemberData.address.street;
+            if (MemberData.address.number) updatedMember.address.number = MemberData.address.number;
+        }
+        if (MemberData.coronaDetails) {
+            if (MemberData.coronaDetails.positiveTestDate) updatedMember.coronaDetails.positiveTestDate = MemberData.coronaDetails.positiveTestDate;
+            if (MemberData.coronaDetails.recoveryDate) updatedMember.coronaDetails.recoveryDate = MemberData.coronaDetails.recoveryDate;
+            if (MemberData.coronaDetails.vaccinations) updatedMember.coronaDetails.vaccinations = MemberData.coronaDetails.vaccinations;
+        }
         
         await updatedMember.save();
 

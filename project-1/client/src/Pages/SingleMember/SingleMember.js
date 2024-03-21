@@ -1,12 +1,23 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import './SingleMember.css';
 
 const { useParams } = require("react-router-dom");
-const { getMember } = require("../../Services/MemberApi");
+const { getMember, deleteMember } = require("../../Services/MemberApi");
 
 const SingleMember = () => {
     const { id } = useParams();
     const [memberData, setMemberData] = useState(null);
+    const navigate = useNavigate();
+
+    const handleDelete = async () => {
+        try {
+            await deleteMember(id);
+            navigate('/members');
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     useEffect(() => {
         const fetchMember = async () => {
@@ -46,6 +57,10 @@ const SingleMember = () => {
                         ))}
                     </ul>
                 </ul>
+            </div>
+            <div className="member-actions">
+                <button onClick={() => navigate(`/members/${memberData._id}/edit`)}>עריכה</button>
+                <button onClick={handleDelete}>מחיקה</button>
             </div>
         </div>
     );

@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 import MemberForm from "../../Components/MemberForm/MemberForm";
 import { updateMember, getMember } from "../../Services/MemberApi";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 
 const UpdateMember = () => {
 
     const { id } = useParams();
     const [memberData, setMemberData] = useState(null);
+    const navigate = useNavigate();
 
     const handleSubmit = async (values) => {
         try {
             console.log(values);
             const data = await updateMember(id, values);
             console.log("updated member:", data);
+            navigate(`/members/${id}`);
+            
         } catch (error) {
             console.log(error);
         }

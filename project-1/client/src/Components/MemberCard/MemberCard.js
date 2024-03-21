@@ -1,8 +1,15 @@
 import './MemberCard.css';
 import { useNavigate } from 'react-router-dom';
-const MemberCard = ({ member }) => {
+import { deleteMember } from '../../Services/MemberApi';
+
+
+const MemberCard = ({ member, onDelete }) => {
     const navigate = useNavigate();
-    console.log(member);
+
+    const handleDelete = () => {
+        onDelete(member._id);
+    }
+
     return (
         <div className="member-card">
             <h2>{`${member.firstName} ${member.lastName}`}</h2>
@@ -12,7 +19,7 @@ const MemberCard = ({ member }) => {
             <div className="member-card__actions">
                 <button onClick={() => navigate(`/members/${member._id}`)}>צפייה</button>
                 <button onClick={() => navigate(`/members/${member._id}/edit`)}>עריכה</button>
-                <button >מחיקה</button>
+                <button onClick={handleDelete}>מחיקה</button>
             </div>
         </div>
     );

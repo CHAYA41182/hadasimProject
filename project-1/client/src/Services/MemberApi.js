@@ -35,6 +35,7 @@ const addMember = async (member) => {
 const updateMember = async (id, member) => {
     try {
       const {data} = await Axios.put(`${baseURL}/${id}`, member);
+      console.log(data);
         return data;
     } catch (error) {
       console.error('Error updating member:', error);
