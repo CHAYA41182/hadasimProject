@@ -1,0 +1,48 @@
+.single-member {
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: right;
+
+}
+
+.single-member h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.single-member p {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.single-member ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.single-member ul li {
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+
+
+}
+
+.personal-details,
+.corona-details {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.personal-details h2,
+.corona-details h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}

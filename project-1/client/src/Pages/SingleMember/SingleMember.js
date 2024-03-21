@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import './SingleMember.css';
+
 const { useParams } = require("react-router-dom");
 const { getMember } = require("../../Services/MemberApi");
 
@@ -19,23 +21,31 @@ const SingleMember = () => {
     }
 
     return (
-        <div>
+        <div className="single-member">
 
             <h2>{memberData.firstName} {memberData.lastName}</h2>
             <p>ת.ז: {memberData.tz}</p>
             <p>כתובת: {memberData.address.street} {memberData.address.number}, {memberData.address.city}</p>
             <p>תאריך לידה: {new Date(memberData.dateBirth).toLocaleDateString()}</p>
-            <div>
+            <p>{memberData.phone ? `טלפון: ${memberData.phone}` : ''}</p>
+            <p>{memberData.mobilePhone ? `טלפון נייד: ${memberData.mobilePhone}` : ''}</p>
+            <div className="corona-details">
                 <p>פרטי קורונה:</p>
                 <ul>
+                    <p>תאריך בדיקה חיובית: {memberData.coronaDetails.positiveTestDate ? new Date(memberData.coronaDetails.positiveTestDate).toLocaleDateString() : ''}</p>
+                    <p>תאריך החלמה: {memberData.coronaDetails.recoveryDate ? new Date(memberData.coronaDetails.recoveryDate).toLocaleDateString() : ''}</p>
+
                     <ul>
                         {memberData.coronaDetails.vaccinations.map((vaccine, index) => (
-                            <li key={index}>תאריך: {new Date(vaccine.date).toLocaleDateString()}, יצרן: {vaccine.manufacturer}</li>
+                            <li key={index}>
+                                <h5>חיסון {index + 1}:</h5>
+                                <p>תאריך: {new Date(vaccine.date).toLocaleDateString()}</p>
+                                <p>יצרן: {vaccine.manufacturer}</p>
+
+                            </li>
                         ))}
                     </ul>
                 </ul>
-                <p>תאריך בדיקה חיובית: {memberData.coronaDetails.positiveTestDate ? new Date(memberData.coronaDetails.positiveTestDate).toLocaleDateString() : ''}</p>
-                <p>תאריך החלמה: {memberData.coronaDetails.recoveryDate ? new Date(memberData.coronaDetails.recoveryDate).toLocaleDateString() : ''}</p>
             </div>
         </div>
     );
