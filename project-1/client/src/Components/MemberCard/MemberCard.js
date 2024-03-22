@@ -1,15 +1,17 @@
 import './MemberCard.css';
 import { useNavigate } from 'react-router-dom';
-import { deleteMember } from '../../Services/MemberApi';
+import { useDeleteMemberMutation } from '../../features/membersApiSlice';
 
 
 const MemberCard = ({ member, onDelete }) => {
     const navigate = useNavigate();
 
-    const handleDelete = () => {
+    const [deleteMember, {isSuccess}] = useDeleteMemberMutation();
+
+    const handleDelete = async () => {
         onDelete(member._id);
     }
-
+    
     return (
         <div className="member-card">
             <img src={member.imageUrl?member.imageUrl:'http://localhost:3000/defultAvatar.png' } alt="member" className='image' />

@@ -1,36 +1,36 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDeleteMemberMutation, useGetMemberQuery } from "../../features/membersApiSlice";
 import './SingleMember.css';
 
 const { useParams } = require("react-router-dom");
-const { getMember, deleteMember } = require("../../Services/MemberApi");
 
 const SingleMember = () => {
     const { id } = useParams();
-    const [memberData, setMemberData] = useState(null);
+    const [member, setMember] = useState();
     const navigate = useNavigate();
+
+    const { data: memberData, error, isLoading, isError, isSuccess} = useGetMemberQuery(id);
+    console.log(id);
+    const [deleteMember, { isSuccess: isSuccessDelete }] = useDeleteMemberMutation();
+
+
+    if (isLoading) return <div>Loading...</div>
 
     const handleDelete = async () => {
         try {
             await deleteMember(id);
-            navigate('/members');
+            if (isSuccessDelete) {
+                navigate('/members');
+            }
         } catch (error) {
             console.log(error);
         }
     }
 
-    useEffect(() => {
-        const fetchMember = async () => {
-            const data = await getMember(id);
-            setMemberData(data);
-        }
-        fetchMember();
-    }, [id]);
 
-    if (!memberData) {
-        return <div>Loading...</div>;
-    }
-
+    if (isLoading) return <div>Loading...</div>
+    if(error) return <div>{JSON.stringify(error)}</div>
     return (
         <div className="single-member">
 

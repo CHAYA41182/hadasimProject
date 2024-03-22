@@ -1,40 +1,33 @@
 import { useEffect, useState } from "react";
 import MemberForm from "../../Components/MemberForm/MemberForm";
-import { updateMember, getMember, uploadMemberImage } from "../../Services/MemberApi";
 import { useNavigate, useParams } from "react-router-dom";
+import { useGetMemberQuery, useUpdateMemberMutation } from "../../features/membersApiSlice";
+
 
 
 const UpdateMember = () => {
 
     const { id } = useParams();
-    const [memberData, setMemberData] = useState(null);
     const navigate = useNavigate();
+    const { data: memberData, error, isLoading, isSuccess } = useGetMemberQuery(id);
+    const [updateMember, { isSuccess: isSuccessUpdate }] = useUpdateMemberMutation();
+
+
+    if (isLoading) return <div>Loading...</div>
 
     const handleSubmit = async (values) => {
         try {
-            console.log(values);
-            const data = await updateMember(id, values);
-            console.log("updated member:", data);
-            navigate(`/members/${id}`);
-            
+            await updateMember({ id, member: values });
+            if (isSuccess) {
+                navigate('/members');
+            }
         } catch (error) {
             console.log(error);
         }
     }
 
-    useEffect(() => {
-        const fetchMember = async () => {
-            const data = await getMember(id);
-            setMemberData(data);
-            console.log(data);
-            
-        }
-        fetchMember();
-    }, [id]);
 
-    if (!memberData) {
-        return <div>Loading...</div>;
-    }
+    if (isLoading) return <div>Loading...</div>
     return (
         <div>
             <h1>עדכון פרטי חבר</h1>

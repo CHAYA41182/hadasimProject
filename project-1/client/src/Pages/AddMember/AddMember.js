@@ -1,16 +1,25 @@
 import MemberForm from "../../Components/MemberForm/MemberForm";
-import {addMember} from "../../Services/MemberApi";
+import { useAddMemberMutation } from "../../features/membersApiSlice";
+import { useNavigate } from "react-router-dom";
 
 const AddMember = () => {
+
+    const navigate = useNavigate();
+    const [addMember, {isSuccess, isError, error}] = useAddMemberMutation();
+
     const handleSubmit = async (values) => {
         try {
             console.log(values);
-            const data = await addMember(values);
-            console.log("added member:", data);
+            await addMember(values);
+            console.log("member added");
+            if(isSuccess) {
+                navigate('/members');
+            }
         } catch (error) {
             console.log(error);
         }
     }
+
     return (
         <div>
             <h1>Add Member</h1>
