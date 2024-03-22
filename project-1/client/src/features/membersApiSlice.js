@@ -36,6 +36,19 @@ const membersApiSlice = apiSlice.injectEndpoints({
             }),
             invalidatesTags: ['Members'],
         }),
+
+        uploadMemberImage: builder.mutation({
+            query: ({ id, image }) => {
+                const formData = new FormData();
+                formData.append('image', image);
+                return {
+                    url: `Members/uploadImage/${id}`,
+                    method: 'POST',
+                    body: formData,
+                };
+            },
+        }),
+        invalidatesTags: ['Members'],
     }),
 });
 
@@ -45,4 +58,5 @@ export const {
     useAddMemberMutation,
     useUpdateMemberMutation,
     useDeleteMemberMutation,
+    useUploadMemberImageMutation,
 } = membersApiSlice;

@@ -60,3 +60,33 @@
 
 
 }
+
+.custom-file-upload .fa-upload {
+    font-size: 24px;
+    color: white;
+}
+
+.image-container {
+    position: relative;
+}
+
+.custom-file-upload {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    background-color:  rgba(255, 255, 255, 0.507);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 20px;
+}
+
+.image-container {
+    position: relative;
+}
+

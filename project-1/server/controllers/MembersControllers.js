@@ -77,9 +77,9 @@ const uploadImage = async (req, res) => {
         if (!req.file) {
             return res.status(400).json({ message: 'No file uploaded' });
         }
-        MemberService.uploadImage(id, req.file);
+        const imageUrl = await MemberService.uploadImage(id, req.file);
 
-        res.json({ message: 'file uploaded successfully' });
+        res.json({ message: 'file uploaded successfully', imageUrl});
     } catch (error) {
         res.status(500).json({ message: error.message });
     }

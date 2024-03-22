@@ -80,7 +80,7 @@ const uploadImage = async (id,file) => {
     const member = await Member.findById(id);
     member.imageUrl = imagePath;
     await member.save();
-    return {message: 'file uploaded successfully'};
+    return imagePath;
 }
 
 module.exports = { getMembers, getMember, createMember, updateMember, deleteMember, uploadImage };
