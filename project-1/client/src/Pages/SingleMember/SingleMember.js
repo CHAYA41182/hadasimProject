@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDeleteMemberMutation, useGetMemberQuery } from "../../features/membersApiSlice";
+import { useDeleteMemberMutation, useGetMemberQuery, useUploadMemberImageMutation } from "../../features/membersApiSlice";
 import './SingleMember.css';
+import { FaUpload } from 'react-icons/fa';
 
 const { useParams } = require("react-router-dom");
 
@@ -9,8 +10,9 @@ const SingleMember = () => {
     const { id } = useParams();
     const [member, setMember] = useState();
     const navigate = useNavigate();
+    const [uploadMemberImage, { }] = useUploadMemberImageMutation();
 
-    const { data: memberData, error, isLoading, isError, isSuccess} = useGetMemberQuery(id);
+    const { data: memberData, error, isLoading, isError, isSuccess } = useGetMemberQuery(id);
     console.log(id);
     const [deleteMember, { isSuccess: isSuccessDelete }] = useDeleteMemberMutation();
 
@@ -29,17 +31,48 @@ const SingleMember = () => {
     }
 
 
+    const handleImageUpload = async (event) => {
+        const file = event.target.files[0];
+        const response = await uploadMemberImage({ id: memberData._id, image: file });
+        if (response && response.data) {
+            
+        } else {
+            console.error('Unexpected response', response);
+        }
+    }
+
+
     if (isLoading) return <div>Loading...</div>
-    if(error) return <div>{JSON.stringify(error)}</div>
+    if (error) return <div>{JSON.stringify(error)}</div>
+
     return (
         <div className="single-member">
 
-            <h2>{memberData.firstName} {memberData.lastName}</h2>
-            <p>ת.ז: {memberData.tz}</p>
-            <p>כתובת: {memberData.address.street} {memberData.address.number}, {memberData.address.city}</p>
-            <p>תאריך לידה: {new Date(memberData.dateBirth).toLocaleDateString()}</p>
-            <p>{memberData.phone ? `טלפון: ${memberData.phone}` : ''}</p>
-            <p>{memberData.mobilePhone ? `טלפון נייד: ${memberData.mobilePhone}` : ''}</p>
+            <div className="member-card-single">
+                <div className="image-container">
+                    <img src={memberData.imageUrl ? memberData.imageUrl : 'http://localhost:3000/defultAvatar.png'} alt="member" className='image' />
+                    <label htmlFor={memberData._id + "file-upload"} className="custom-file-upload" >
+                        <FaUpload />
+                    </label>
+                    <input id={memberData._id + "file-upload"} key={memberData._id} type="file" onChange={handleImageUpload} style={{ display: 'none' }} />
+                </div>
+                <div>
+                    <p>{isError ? JSON.stringify(error) : ''}</p>
+
+                    <div className='detiles'>
+                        <h2>{`${memberData.firstName} ${memberData.lastName}`}</h2>
+                        <p>{`מספר ת.ז: ${memberData.tz}`}</p>
+                        <p>{memberData.phone ? `טלפון: ${memberData.phone}` : memberData.mobilePhone ? `טלפון נייד: ${memberData.mobilePhone}` : ''}</p>
+                        <p>{`תאריך לידה: ${(new Date(memberData.dateBirth)).toLocaleDateString()}`}</p>
+                        <p>כתובת: {memberData.address.street} {memberData.address.number}, {memberData.address.city}</p>
+                        <p>תאריך לידה: {new Date(memberData.dateBirth).toLocaleDateString()}</p>
+                        <p>{memberData.phone ? `טלפון: ${memberData.phone}` : ''}</p>
+                        <p>{memberData.mobilePhone ? `טלפון נייד: ${memberData.mobilePhone}` : ''}</p>
+                    </div>
+                   
+                </div>
+            </div>
+
             <div className="corona-details">
                 <p>פרטי קורונה:</p>
                 <ul>

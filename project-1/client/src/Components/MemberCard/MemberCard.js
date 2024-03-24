@@ -39,7 +39,7 @@ const MemberCard = ({ member, onDelete }) => {
                 </label>
                 <input id={member._id + "file-upload"} key={member._id} type="file" onChange={handleImageUpload} style={{ display: 'none' }} />
             </div>
-            <input id={member._id + "file-upload"} key={member._id} type="file" onChange={handleImageUpload} style={{ display: 'none' }} />            <div>
+            <div>
                 <p>{isError ? JSON.stringify(error) : ''}</p>
 
                 <div className='detiles'>

@@ -9,20 +9,14 @@
   font-family: Arial, sans-serif; /* Example font */
 }
 
-.personal-details, .corona-details {
+.personal-details, .corona-details-form {
   margin-bottom: 20px;
   padding: 10px;
   border: 2px solid;
   border-radius: 10px;
+  border-color: #007bff;
 }
 
-.personal-details {
-  border-color: #4CAF50; /* Green border for personal details */
-}
-
-.corona-details {
-  border-color: #FFC107; /* Orange border for corona details */
-}
 
 .form-group {
   margin-bottom: 15px;
@@ -44,7 +38,7 @@ label {
 }
 
 button {
-  margin-top: 10px;
+  margin: 10px;
   cursor: pointer;
   background-color: #007bff;
   color: white;
@@ -69,4 +63,22 @@ button:hover {
 
 .btn-primary:hover {
   background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+input {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.error-input {
+  border-color: #dc3545;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }

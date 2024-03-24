@@ -20,7 +20,12 @@ const HomePage = () => {
             </Link>
             <p className="nav-description">הוסיפו חבר חדש למערכת הקופ"ח</p>
           </li>
-          {/* Add more navigation items as needed */}
+          <li>
+            <Link to="corona-information" className="nav-link">
+              מידע על הקורונה
+            </Link>
+            <p className="nav-description">קבלו מידע על מספר החולים הפעילים וכמות המחוסנים</p>
+          </li>
         </ul>
       </nav>
     </div>

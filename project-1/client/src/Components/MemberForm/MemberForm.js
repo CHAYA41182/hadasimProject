@@ -80,7 +80,7 @@ const MemberForm = ({ initialValues, handleSubmit }) => {
                                 <ErrorMessage name="mobilePhone" component="div" className="error" />
                             </div>
                         </div>
-                        <div className="corona-details">
+                        <div className="corona-details-form">
                             <h2>פרטי קורונה</h2>
                             <div className="form-group">
                                 <label htmlFor="coronaDetails.positiveTestDate">תאריך בדיקה חיובית</label>

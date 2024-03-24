@@ -20,6 +20,8 @@ const membersApiSlice = apiSlice.injectEndpoints({
                 method: 'POST',
                 body: member,
             }),
+            invalidatesTags: ['Members'],
+
         }),
         updateMember: builder.mutation({
             query: ({ id, member }) => ({
@@ -48,8 +50,9 @@ const membersApiSlice = apiSlice.injectEndpoints({
                     body: formData,
                 };
             },
+            invalidatesTags: ['Members'],
+
         }),
-        invalidatesTags: ['Members'],
     }),
 });
 

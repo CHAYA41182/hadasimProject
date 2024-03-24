@@ -26,7 +26,7 @@ const hebrewStreets = ['רחוב הנביאים', 'רחוב המלך גורג', 
                 street: chance.pickone(hebrewStreets),
                 number: chance.natural({ min: 1, max: 100 }),
             },
-            dateBirth: chance.date({ year: chance.year({ min: 1900, max: new Date().getFullYear() - 1 }) }),
+            dateBirth: chance.date({ year: chance.year({ min: 1930, max: new Date().getFullYear() - 1 }) }),
             phone: chance.phone({ formatted: false }),
             mobilePhone: chance.phone({ formatted: false }),
             coronaDetails: {

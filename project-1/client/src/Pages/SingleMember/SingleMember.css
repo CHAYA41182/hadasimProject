@@ -1,48 +1,160 @@
 .single-member {
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #007bff;
-    border-radius: 10px;
-    margin-top: 20px;
-    text-align: right;
-
-}
-
-.single-member h2 {
-    color: #007bff;
-    margin-bottom: 15px;
-    font-family: Arial, sans-serif;
-}
-
-.single-member p {
-    margin-bottom: 10px;
-    font-family: Arial, sans-serif;
-}
-
-.single-member ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-    font-family: Arial, sans-serif;
-}
-
-.single-member ul li {
-    margin-bottom: 5px;
-    font-family: Arial, sans-serif;
-
-
-}
-
-.personal-details,
-.corona-details {
-    border: 1px solid #007bff;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    width: 80%;
+    text-align: left; /* כל הטקסט מימין לשמאל */
+    unicode-bidi: embed;
+    direction: rtl; /* כל הטקסט מימין לשמאל */
+
+  }
+  
+  .single-member h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    unicode-bidi: embed;
+    direction: ltr; /* כל הטקסט מימין לשמאל */
+  }
+
+  .single-member h5 {
+    unicode-bidi: embed;
+    direction: rtl; /* כל הטקסט מימין לשמאל */
+  }
+
+
+  
+  .single-member p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 8px;
+    unicode-bidi: embed;
+    direction: rtl; /* כל הטקסט מימין לשמאל */
+  }
+  
+  .corona-details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    padding: 40px;
+    border: 3px solid #007bff;
+    margin: 10px;
+    border-radius: 20px;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  
+  .corona-details p {
+    margin-bottom: 5px;
+  }
+  
+  .corona-details ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .corona-details ul li {
+    margin-bottom: 10px;
+  }
+  
+  .member-actions {
+    margin-top: 20px;
+  }
+  
+  .member-actions button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .member-actions button:first-child {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+
+
+  .member-actions button:last-child {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+
+  
+.member-card-single .image{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+
+
 }
 
-.personal-details h2,
-.corona-details h2 {
-    color: #007bff;
+.custom-file-upload .fa-upload {
+    font-size: 24px;
+    color: white;
+}
+
+.image-container {
+    position: relative;
+}
+
+.custom-file-upload {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    background-color:  rgba(255, 255, 255, 0.507);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 20px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.member-card-single {
+    /* card to member, ui-ux */
+    display: flex;
+    padding: 40px;
+    border: 3px solid #007bff;
+    flex-direction: row-reverse;
+    margin: 10px;
+    border-radius: 20px;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+.member-card-single h2 {
+    margin-top: 0;
     margin-bottom: 10px;
-    font-family: Arial, sans-serif;
+    font-size: 3rem;
+    color: #007bff;
+}
+
+.member-card-single p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    text-align: right;
 }
