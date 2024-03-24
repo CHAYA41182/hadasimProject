@@ -1,15 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useMemo } from 'react';
 import { useGetMembersQuery } from '../../features/membersApiSlice';
 import GraphActiveCases from '../../Components/GraphActiveCases/GraphActiveCases';
 
-const CoronaInformation = () => {
-    const {data, isLoading} = useGetMembersQuery()
-    const thisDate = new Date();
+const calculateGraphData = (data, thisDate) => {
     const graphData = [];
-
-    if (isLoading || !data) {
-        return <div>Loading...</div>; // or return some other placeholder content
-    }
     for(let i = 29; i >= 0; i--) {
         const sumActiveIllenes = data.filter((member)=>{
             const positiveTestDate = new Date(member.coronaDetails.positiveTestDate);
@@ -29,32 +23,46 @@ const CoronaInformation = () => {
         }
         graphData.push({date: stringDate, activeCases: sumActiveIllenes});
     }
-    console.log(graphData);
+    return graphData;
+}
 
-    const vaccineData = {
+const calculateVaccineData = (data) => {
+    return {
         notVaccinated: data.filter(member => member.coronaDetails.vaccinations.length === 0).length,
         oneDose: data.filter(member => member.coronaDetails.vaccinations.length === 1).length,
         twoDoses: data.filter(member => member.coronaDetails.vaccinations.length === 2).length,
         threeDoses: data.filter(member => member.coronaDetails.vaccinations.length === 3).length,
         fourDoses: data.filter(member => member.coronaDetails.vaccinations.length === 4).length,
     };
-    console.log(vaccineData);
+}
 
-    return <div>
+const CoronaInformation = () => {
+    const {data} = useGetMembersQuery();
+    const thisDate = new Date();
 
 
-    <div id="activeCasesChart">
-        <GraphActiveCases data={graphData} />
-    </div>
-    <div id="vaccineChart">
-        <h2>סטטיסטיקת חיסונים</h2>
-        <div>חברי קופ"ח שעדיין לא התחסנו: {vaccineData.notVaccinated}</div>
-        <div>חברי קופ"ח שהתחסנו בחיסון אחד: {vaccineData.oneDose}</div>
-        <div>חברי קופ"ח שהתחסנו בחיסון שני: {vaccineData.twoDoses}</div>
-        <div>חברי קופ"ח שהתחסנו בחיסון שלישי: {vaccineData.threeDoses}</div>
-        <div>חברי קופ"ח שהתחסנו בחיסון רביעי: {vaccineData.fourDoses}</div>
-    </div>
-</div>
+    if (!data) {
+        return <div>Loading...</div>; 
+    }
+    const graphData =  calculateGraphData(data, thisDate)
+    const vaccineData = calculateVaccineData(data)
+
+
+    return (
+        <div>
+            <div id="activeCasesChart">
+                <GraphActiveCases data={graphData} />
+            </div>
+            <div id="vaccineChart">
+                <h2>סטטיסטיקת חיסונים</h2>
+                <div>חברי קופ"ח שעדיין לא התחסנו: {vaccineData.notVaccinated}</div>
+                <div>חברי קופ"ח שהתחסנו בחיסון אחד: {vaccineData.oneDose}</div>
+                <div>חברי קופ"ח שהתחסנו בחיסון שני: {vaccineData.twoDoses}</div>
+                <div>חברי קופ"ח שהתחסנו בחיסון שלישי: {vaccineData.threeDoses}</div>
+                <div>חברי קופ"ח שהתחסנו בחיסון רביעי: {vaccineData.fourDoses}</div>
+            </div>
+        </div>
+    );
 }
 
 export default CoronaInformation;

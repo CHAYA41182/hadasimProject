@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 const AddMember = () => {
 
     const navigate = useNavigate();
-    const [addMember, {isSuccess, isError, error}] = useAddMemberMutation();
+    const [addMember, { isSuccess, isError, error }] = useAddMemberMutation();
 
     const handleSubmit = async (values) => {
         try {
             console.log(values);
             await addMember(values);
             console.log("member added");
-            if(isSuccess) {
+            if (isSuccess) {
                 navigate('/members');
             }
         } catch (error) {
