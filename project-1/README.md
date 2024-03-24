@@ -1,8 +1,8 @@
 # מטלת בית הדסים 4.0
 
-# תרגיל :1 מערכת ניהול קורונה לקופת חולים 
+## תרגיל :1 מערכת ניהול קורונה לקופת חולים 
 
-# אודות הפרוייקט:
+## אודות הפרוייקט:
 
 ### Built With
 צד שרת:
@@ -26,37 +26,37 @@
   
 ### התקנה
  Clone the repo
-   ```sh
+```sh
    git clone https://github.com/CHAYA41182/hadasimProject/tree/master/project-1
 ```
 צד שרת:
 התקנת חבילות נדרשות:
-    ```sh
+```sh
     cd server
     npm install
 
-    ```
+ ```
 
 צד לקוח:
 התקנת חבילות נדרשות:
-    ```sh
+ ```sh
     cd client
     npm install
 
-    ```
+ ```
 ### הפעלה
 צד שרת:
-    ```sh
+```sh
     cd server
     npm start
 
-    ```
+```
 צד לקוח:
-    ```sh
+ ```sh
     cd client
     npm start
 
-    ```
+ ```
 
 ### תיעוד
 * [API](https://documenter.getpostman.com/view/16607357/TzJx8z9T)
