@@ -45,11 +45,12 @@ additionally, the following packages were used:
 ### Installation
  Clone the repo
 ```sh
-   git clone https://github.com/CHAYA41182/hadasimProject/tree/master/project-1
+   git clone https://github.com/CHAYA41182/hadasimProject
 ```
 ###### server side:
 install required packages:
 ```sh
+    cd project-1
     cd server
     npm install
 
@@ -59,6 +60,7 @@ install required packages:
 install required packages:
 
  ```sh
+    cd project-1
     cd client
     npm install
 
@@ -66,12 +68,14 @@ install required packages:
 ### Usage
 ###### server side:
 ```sh
+    cd project-1
     cd server
     npm start
 
 ```
 ###### client side:
  ```sh
+    cd project-1
     cd client
     npm start
 
