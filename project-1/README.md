@@ -4,7 +4,7 @@
 
 
 ### Built With
-צד שרת:
+
 * [![Node.js][Node.js]][Node.js-url]
 * [![Express.js][Express.js]][Express.js-url]
 * [![MongoDB][MongoDB]][MongoDB-url]
@@ -101,7 +101,7 @@
 [formik]: https://img.shields.io/badge/Formik-FF69B4?style=for-the-badge&logoColor=white
 [formik-url]: https://formik.org/
 [yup]: https://img.shields.io/badge/Yup-FF69B4?style=for-the-badge&logoColor=white
-[yup-url]:[react-apexcharts]: https://img.shields.io/badge/ApexCharts-FF69B4?style=for-the-badge&logoColor=white
+[react-apexcharts]: https://img.shields.io/badge/ApexCharts-FF69B4?style=for-the-badge&logoColor=white
 [react-apexcharts-url]: https://apexcharts.com/
 [react-router-dom]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
 [react-router-dom-url]: https://reactrouter.com/
