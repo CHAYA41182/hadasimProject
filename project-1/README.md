@@ -62,12 +62,13 @@
 
 ### צילום מסך
 דף הבית:
-![add-member-screen-shot-2](https://github.com/CHAYA41182/hadasimProject/assets/66823881/73fb7be7-c859-4b24-abaa-696a6679537f)
+![home-page-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/055686ac-a904-4f0d-ba82-71e3f97266d6)
 רשימת כל החברים:
 ![list-members-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/9d9f541b-8ac7-40a1-81a5-5cbae9d23824)
 הוספת חבר:
 ![add-member-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/d2c4d7e9-a02b-4cce-a0cd-0c5786633e2d)
 מידע קורונה:
+
 ![ttbwd9ei](https://github.com/CHAYA41182/hadasimProject/assets/66823881/bb918da4-db56-415b-83dd-1b78ca3b0ba9)
 
 
