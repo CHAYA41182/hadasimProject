@@ -5,15 +5,16 @@
 
 ### Built With
 צד שרת:
-* [node.js](https://nodejs.org/)
-* [express.js](https://expressjs.com/)
-* [mongoose](https://mongoosejs.com/)
-* [MongoDB](https://www.mongodb.com/)
+* [![Node.js][Node.js]][Node.js-url]
+* [![Express.js][Express.js]][Express.js-url]
+* [![MongoDB][MongoDB]][MongoDB-url]
+* [![Mongoose][Mongoose]][Mongoose-url]
+
 
 
 צד לקוח:
-* [React](https://reactjs.org/)
-* [redux-toolkit](https://redux-toolkit.js.org/)
+* [![React][React.js]][React-url]
+* [![Material-UI][Material-UI]][Material-UI-url]
 
 ## מתחילים
 
