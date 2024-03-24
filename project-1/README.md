@@ -57,8 +57,7 @@
 
  ```
 
-### תיעוד
-* [API](https://documenter.getpostman.com/view/16607357/TzJx8z9T)
+
 
 ### צילום מסך
 דף הבית:
