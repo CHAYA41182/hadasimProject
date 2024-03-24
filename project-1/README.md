@@ -9,12 +9,23 @@
 * [![Express.js][Express.js]][Express.js-url]
 * [![MongoDB][MongoDB]][MongoDB-url]
 * [![Mongoose][Mongoose]][Mongoose-url]
+* [![cors][cors]][cors-url]
+* [![dotenv][dotenv]][dotenv-url]
+* [![joi][joi]][joi-url]
+* [![multer][multer]][multer-url]
 
 
 
 צד לקוח:
 * [![React][React.js]][React-url]
 * [![Redux-Toolkit][redux-toolkit]][redux-toolkit-url]
+* [![formik][formik]][formik-url]
+* [![yup][yup]][yup-url]
+* [![react-apexcharts][react-apexcharts]][react-apexcharts-url]
+* [![react-router-dom][react-router-dom]][react-router-dom-url]
+* [![react-icons][react-icons]][react-icons-url]
+
+
 
 ## מתחילים
 
@@ -87,6 +98,23 @@
 [Material-UI-url]: https://material-ui.com/
 [redux-toolkit]: https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white
 [redux-toolkit-url]: https://redux-toolkit.js.org/
+[formik]: https://img.shields.io/badge/Formik-FF69B4?style=for-the-badge&logoColor=white
+[formik-url]: https://formik.org/
+[yup]: https://img.shields.io/badge/Yup-FF69B4?style=for-the-badge&logoColor=white
+[yup-url]:[react-apexcharts]: https://img.shields.io/badge/ApexCharts-FF69B4?style=for-the-badge&logoColor=white
+[react-apexcharts-url]: https://apexcharts.com/
+[react-router-dom]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[react-router-dom-url]: https://reactrouter.com/
+[react-icons]: https://img.shields.io/badge/React_Icons-61DAFB?style=for-the-badge&logo=react-icons&logoColor=white
+[react-icons-url]: https://react-icons.github.io/react-icons/
+[cors]: https://img.shields.io/badge/cors-20232A?style=for-the-badge&logo=cors&logoColor=61DAFB
+[cors-url]: https://www.npmjs.com/package/cors
+[dotenv]: https://img.shields.io/badge/dotenv-20232A?style=for-the-badge&logo=dotenv&logoColor=61DAFB
+[dotenv-url]: https://www.npmjs.com/package/dotenv
+[joi]: https://img.shields.io/badge/joi-20232A?style=for-the-badge&logo=joi&logoColor=61DAFB
+[joi-url]: https://www.npmjs.com/package/joi
+[multer]: https://img.shields.io/badge/multer-20232A?style=for-the-badge&logo=multer&logoColor=61DAFB
+[multer-url]: https://www.npmjs.com/package/multer
 
 
 
