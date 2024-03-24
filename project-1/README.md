@@ -24,6 +24,7 @@ additionally, the following packages were used:
 ##### client side:
 * client side: [![React.js][React.js]][React-url] framework
 * api and state management: [![redux-toolkit][redux-toolkit]][redux-toolkit-url]
+additionally, the following packages were used:
 * form management: [![formik][formik]][formik-url]
 * form validation: [![yup][yup]][formik-url]
 * charting library: [![react-apexcharts][react-apexcharts]][react-apexcharts-url]
