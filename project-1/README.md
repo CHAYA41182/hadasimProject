@@ -68,8 +68,8 @@
 הוספת חבר:
 ![add-member-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/d2c4d7e9-a02b-4cce-a0cd-0c5786633e2d)
 מידע קורונה:
+![corona-detiles-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/6dc4714c-2bc3-41ff-b548-5ae9cb7fcce4)
 
-![ttbwd9ei](https://github.com/CHAYA41182/hadasimProject/assets/66823881/bb918da4-db56-415b-83dd-1b78ca3b0ba9)
 
 
 
