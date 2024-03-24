@@ -71,6 +71,23 @@
 ![corona-detiles-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/6dc4714c-2bc3-41ff-b548-5ae9cb7fcce4)
 
 
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[Node.js-url]: https://nodejs.org/en/
+[Express.js]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
+[Express.js-url]: https://expressjs.com/
+[MongoDB]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+[MongoDB-url]: https://www.mongodb.com/
+[Mongoose]: https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logoColor=white
+[Mongoose-url]: https://mongoosejs.com/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Material-UI]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
+[Material-UI-url]: https://material-ui.com/
+
+
+
 
 
 
