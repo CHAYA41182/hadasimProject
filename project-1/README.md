@@ -15,8 +15,6 @@
 *  Database ORM: [![Mongoose][Mongoose]][Mongoose-url]
 
 additionally, the following packages were used:
-*  Middleware: [![cors][cors]][cors-url]
-*  Environment Variables: [![dotenv][dotenv]][dotenv-url]
 *  Validation: [![joi][joi]][joi-url]
 *  File Upload: [![multer][multer]][multer-url]
 
@@ -28,10 +26,6 @@ additionally, the following packages were used:
 additionally, the following packages were used:
 * form management: [![formik][formik]][formik-url]
 * form validation: [![yup][yup]][formik-url]
-* charting library: [![react-apexcharts][react-apexcharts]][react-apexcharts-url]
-* routing: [![react-router-dom][react-router-dom]][react-router-dom-url]
-* icons: [![react-icons][react-icons]][react-icons-url]
-
 
 
 ## Getting Started
