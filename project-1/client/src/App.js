@@ -7,7 +7,7 @@ import MemberList from './Pages/MembersList.js/MemberList';
 import Layout from './Components/Layout/Layout';
 import SingleMember from './Pages/SingleMember/SingleMember';
 import UpdateMember from './Pages/UpdateMember/UpdateMember';
-import ActiveCases from './Pages/ActiveCases/ActiveCases';
+import CoronaInformation from './Pages/CoronaInformation/CoronaInformation';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
             <Route path="/add-member" element={<AddMember />} />
             <Route path="/members/:id" element={<SingleMember />} />
             <Route path="/members/:id/edit" element={<UpdateMember />} />
-            <Route path='/active-cases' element={<ActiveCases />} />
+            <Route path='/Corona-information' element={<CoronaInformation />} />
           </Route>
         </Routes>
       </Router>
