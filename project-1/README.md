@@ -5,64 +5,69 @@
 
 ### Built With
 
-* [![Node.js][Node.js]][Node.js-url]
-* [![Express.js][Express.js]][Express.js-url]
-* [![MongoDB][MongoDB]][MongoDB-url]
-* [![Mongoose][Mongoose]][Mongoose-url]
-* [![cors][cors]][cors-url]
-* [![dotenv][dotenv]][dotenv-url]
-* [![joi][joi]][joi-url]
-* [![multer][multer]][multer-url]
+#### The project was built using the following technologies:
+
+##### server side:
+
+* server side: [![Node.js][Node.js]][Node.js-url]
+* server framework: [![Express.js][Express.js]][Express.js-url]
+* Databases:  [![MongoDB][MongoDB]][MongoDB-url]
+*  Database ORM: [![Mongoose][Mongoose]][Mongoose-url]
+additionally, the following packages were used:
+*  Middleware: [![cors][cors]][cors-url]
+*  Environment Variables: [![dotenv][dotenv]][dotenv-url]
+*  Validation: [![joi][joi]][joi-url]
+*  File Upload: [![multer][multer]][multer-url]
+
+
+##### client side:
+* client side: [![React.js][React.js]][React-url] framework
+* api and state management: [![redux-toolkit][redux-toolkit]][redux-toolkit-url]
+* form management: [![formik][formik]][formik-url]
+* form validation: [![yup][yup]][formik-url]
+* charting library: [![react-apexcharts][react-apexcharts]][react-apexcharts-url]
+* routing: [![react-router-dom][react-router-dom]][react-router-dom-url]
+* icons: [![react-icons][react-icons]][react-icons-url]
 
 
 
-צד לקוח:
-* [![React][React.js]][React-url]
-* [![Redux-Toolkit][redux-toolkit]][redux-toolkit-url]
-* [![formik][formik]][formik-url]
-* [![yup][yup]][yup-url]
-* [![react-apexcharts][react-apexcharts]][react-apexcharts-url]
-* [![react-router-dom][react-router-dom]][react-router-dom-url]
-* [![react-icons][react-icons]][react-icons-url]
+## Getting Started
 
-
-
-## מתחילים
-
-### דרישות מוקדמות
+### Prerequisites
 * npm
   ```sh
   npm install npm@latest -g
   ```
   
-### התקנה
+### Installation
  Clone the repo
 ```sh
    git clone https://github.com/CHAYA41182/hadasimProject/tree/master/project-1
 ```
-צד שרת:
-התקנת חבילות נדרשות:
+###### server side:
+install required packages:
 ```sh
     cd server
     npm install
 
  ```
 
-צד לקוח:
-התקנת חבילות נדרשות:
+###### client side:
+install required packages:
+
  ```sh
     cd client
     npm install
 
  ```
-### הפעלה
-צד שרת:
+### Usage
+###### server side:
 ```sh
     cd server
     npm start
 
 ```
-צד לקוח:
+###### client side:
  ```sh
     cd client
     npm start
@@ -71,14 +76,14 @@
 
 
 
-### צילום מסך
-דף הבית:
+### Screenshots
+home page:
 ![home-page-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/055686ac-a904-4f0d-ba82-71e3f97266d6)
-רשימת כל החברים:
+list of members:
 ![list-members-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/9d9f541b-8ac7-40a1-81a5-5cbae9d23824)
-הוספת חבר:
+add member:
 ![add-member-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/d2c4d7e9-a02b-4cce-a0cd-0c5786633e2d)
-מידע קורונה:
+corona information:
 ![corona-detiles-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/6dc4714c-2bc3-41ff-b548-5ae9cb7fcce4)
 
 
