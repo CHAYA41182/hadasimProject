@@ -1,6 +1,6 @@
 .layout {
     display: flex;
-    flex-direction: column; /* Change this to 'row' if you want the menu on the left */
+    flex-direction: column; 
     height: 100vh; 
 }
 
