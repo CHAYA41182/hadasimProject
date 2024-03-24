@@ -14,7 +14,7 @@
 
 צד לקוח:
 * [![React][React.js]][React-url]
-* [![Material-UI][Material-UI]][Material-UI-url]
+* [![Redux-Toolkit][redux-toolkit]][redux-toolkit-url]
 
 ## מתחילים
 
@@ -85,6 +85,9 @@
 [React-url]: https://reactjs.org/
 [Material-UI]: https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white
 [Material-UI-url]: https://material-ui.com/
+[redux-toolkit]: https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white
+[redux-toolkit-url]: https://redux-toolkit.js.org/
+
 
 
 
