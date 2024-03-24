@@ -39,6 +39,7 @@ const membersApiSlice = apiSlice.injectEndpoints({
 
         uploadMemberImage: builder.mutation({
             query: ({ id, image }) => {
+                console.log(id);
                 const formData = new FormData();
                 formData.append('image', image);
                 return {

@@ -7,6 +7,7 @@ const Menue = () => {
       <Link to="/">בית</Link>
       <Link to="/members">רשימת חברים</Link>
         <Link to="/add-member">הוספת חבר</Link>
+        <Link to="/active-cases">מקרים פעילים בחודש האחרון</Link>
     </div>
   );
 }

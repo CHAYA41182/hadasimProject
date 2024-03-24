@@ -14,7 +14,11 @@ const MemberCard = ({ member, onDelete }) => {
     const handleImageUpload = async (event) => {
         const file = event.target.files[0];
         const response = await uploadMemberImage({ id: member._id, image: file });
-        setMemberImage(response.data.imageUrl);
+        if (response && response.data) {
+            setMemberImage(response.data.imageUrl || member.imageUrl);
+        } else {
+            console.error('Unexpected response', response);
+        }
     }
 
 
@@ -30,12 +34,12 @@ const MemberCard = ({ member, onDelete }) => {
         <div className="member-card">
             <div className="image-container">
                 <img src={memberImage ? memberImage : 'http://localhost:3000/defultAvatar.png'} alt="member" className='image' />
-                <label htmlFor="file-upload" className="custom-file-upload">
+                <label htmlFor={member._id + "file-upload"} className="custom-file-upload" >
                     <FaUpload />
                 </label>
-                <input id="file-upload" type="file" onChange={handleImageUpload} style={{ display: 'none' }} />
+                <input id={member._id + "file-upload"} key={member._id} type="file" onChange={handleImageUpload} style={{ display: 'none' }} />
             </div>
-            <input id="file-upload" type="file" onChange={handleImageUpload} style={{ display: 'none' }} />            <div>
+            <input id={member._id + "file-upload"} key={member._id} type="file" onChange={handleImageUpload} style={{ display: 'none' }} />            <div>
                 <p>{isError ? JSON.stringify(error) : ''}</p>
 
                 <div className='detiles'>
