@@ -78,13 +78,13 @@ install required packages:
 
 
 ### Screenshots
-home page:
+#### home page:
 ![home-page-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/055686ac-a904-4f0d-ba82-71e3f97266d6)
-list of members:
+#### list of members:
 ![list-members-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/9d9f541b-8ac7-40a1-81a5-5cbae9d23824)
-add member:
+#### add member:
 ![add-member-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/d2c4d7e9-a02b-4cce-a0cd-0c5786633e2d)
-corona information:
+#### corona information:
 ![corona-detiles-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/6dc4714c-2bc3-41ff-b548-5ae9cb7fcce4)
 
 
