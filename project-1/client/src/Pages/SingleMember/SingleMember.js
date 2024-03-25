@@ -78,7 +78,6 @@ const SingleMember = () => {
                 <ul>
                     <p>תאריך בדיקה חיובית: {memberData.coronaDetails.positiveTestDate ? new Date(memberData.coronaDetails.positiveTestDate).toLocaleDateString() : ''}</p>
                     <p>תאריך החלמה: {memberData.coronaDetails.recoveryDate ? new Date(memberData.coronaDetails.recoveryDate).toLocaleDateString() : ''}</p>
-
                     <ul>
                         {memberData.coronaDetails.vaccinations.map((vaccine, index) => (
                             <li key={index}>
