@@ -88,6 +88,32 @@ install required packages:
 ![corona-detiles-screen-shot](https://github.com/CHAYA41182/hadasimProject/assets/66823881/6dc4714c-2bc3-41ff-b548-5ae9cb7fcce4)
 
 
+
+### Architecture Overview
+
+The system architecture follows a typical client-server model with a RESTful API:
+
+#### Server-Side API Endpoints:
+
+1. **GET /api/members**: Retrieves a list of all members.
+2. **GET /api/members/:id**: Retrieves details of a specific member by ID.
+3. **POST /api/members**: Creates a new member.
+4. **PUT /api/members/:id**: Updates details of a specific member by ID.
+5. **DELETE /api/members/:id**: Deletes a specific member by ID.
+6. **POST /api/members/uploadImage/:id**: Uploads an image for a specific member.
+
+
+#### Middleware and Utilities:
+
+The system utilizes middleware for file uploads using Multer to handle multipart/form-data. Additionally, Joi is used for request data validation.
+
+#### Database Interaction:
+
+The server interacts with a MongoDB database using Mongoose ORM for defining schemas and models.
+
+
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
