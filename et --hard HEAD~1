@@ -1,0 +1,513 @@
+[33mcommit ee16529398c404b8538736d5ad335cb954122d69[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 26 19:07:29 2024 +0200
+
+    delete schema of draw.io
+
+[33mcommit 1e9db3fe817c564a47d78ba97757150da5ecce7e[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 2201b30 5abf690
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 26 19:05:52 2024 +0200
+
+    Merge branch 'master' of https://github.com/CHAYA41182/hadasimProject
+
+[33mcommit 2201b303d8ade01e1194784b8f7f90b5ada1c48d[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 26 19:05:44 2024 +0200
+
+    seperate service to two layears: services and repository
+
+[33mcommit b80006c0d272399a0020ca97fabf70ee0cbf5961[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 26 18:58:59 2024 +0200
+
+    Refactor shape selection and triangle handling
+
+[33mcommit 5abf690b6f339e41af9fb89b7827919397618877[m
+Author: chaya kremer <66823881+CHAYA41182@users.noreply.github.com>
+Date:   Tue Mar 26 17:47:51 2024 +0200
+
+    תרשים זרימה המתאר את התוכנית
+
+[33mcommit 11a78981a21e3cf2a139c64e58fc151b9047f520[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Mon Mar 25 22:40:46 2024 +0200
+
+    Remove unnecessary line in SingleMember.js
+
+[33mcommit 3b5686943621b73ba694d30526d6fadbb90711f7[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 19:20:45 2024 +0200
+
+    Refactor coronaInformation component
+
+[33mcommit 901aa4122aa5d412ccc1d7efd308eb4a45ad1367[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:51:37 2024 +0200
+
+    Refactor MemberCard component to use separate components for image, details, and actions
+
+[33mcommit b1864759721ae2a90220bca3669d504e68b7dd2d[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:42:11 2024 +0200
+
+    delete comments
+
+[33mcommit aae4d36e52d1a85c63b67d85585db15ea56f60e4[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:40:21 2024 +0200
+
+    Delete unnecessary files and update manifest.json and robots.txt
+
+[33mcommit a57624b73d251fe6da44cc40151191debb68c9b6[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:26:58 2024 +0200
+
+    Update README.md with screenshots
+
+[33mcommit 3d37afd9d8264c392929ff48887ba758f7cb8d8d[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:25:28 2024 +0200
+
+    Remove unused packages and update README.md
+
+[33mcommit 582d3b437d5bd9e00a49977de415cf83d1434084[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:22:08 2024 +0200
+
+    Update installation and usage instructions
+
+[33mcommit dab0a8b6adc72ea24a49167d31e0ae0d11eb24ed[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:16:34 2024 +0200
+
+    Update README.md with additional package information
+
+[33mcommit 1f913602d59ef35044b58b5bb3e42d8fdabe4065[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:15:33 2024 +0200
+
+    Add additional packages used for client-side development
+
+[33mcommit 90a125f0f89df6d97fae5dcfdcbed46f3df6a9aa[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:15:09 2024 +0200
+
+    Add additional packages to README.md
+
+[33mcommit a149181adc35a4c25cebadf3b5a6d6418e3e399e[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:07:49 2024 +0200
+
+    add hebro readme
+
+[33mcommit 79729d6ae7e7ba22d07864309c1d590b980d2454[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 18:01:22 2024 +0200
+
+    Refactor README.md to include project technologies and installation instructions
+
+[33mcommit d1e6c04ab096afccae9ee1cae75e43f7e11e398f[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 17:52:38 2024 +0200
+
+    Update dependencies and badges in README.md
+
+[33mcommit 270170b37619f281b591471a361f43075f7c3dd1[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 17:50:17 2024 +0200
+
+    Add new dependencies for server and client
+
+[33mcommit b33303d86bfc075dea95e555056ae030e7747d13[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 17:45:07 2024 +0200
+
+    Update README.md with Redux-Toolkit badge
+
+[33mcommit e4ab2c3f83e8924e60ebb15aa42c4c6954736822[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 17:43:19 2024 +0200
+
+    Add badges and links to README.md
+
+[33mcommit 52564e0faf3d3288609f7c834dc17b7f3f3e7c19[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 17:38:57 2024 +0200
+
+    Update dependencies in README.md
+
+[33mcommit 6275c3e0663446bf98c8b97ee07a118397e9c02a[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 16:17:16 2024 +0200
+
+    Remove unused API documentation link
+
+[33mcommit 2eae8e223277b0cc2436d20e3e941f28690f387f[m
+Author: chaya kremer <66823881+CHAYA41182@users.noreply.github.com>
+Date:   Sun Mar 24 16:10:02 2024 +0200
+
+    Update README.md
+
+[33mcommit dc3d956162f56207c3cfbd7c968e8b07eacc0db0[m
+Author: chaya kremer <66823881+CHAYA41182@users.noreply.github.com>
+Date:   Sun Mar 24 16:09:05 2024 +0200
+
+    Update README.md
+
+[33mcommit 5867260722a27e889621e1dd6a0468dffa26ee4c[m
+Author: chaya kremer <66823881+CHAYA41182@users.noreply.github.com>
+Date:   Sun Mar 24 16:06:28 2024 +0200
+
+    Update README.md
+
+[33mcommit fb2017fd016c561d4c3e3e185c8605abcedf4a2f[m
+Author: chaya kremer <66823881+CHAYA41182@users.noreply.github.com>
+Date:   Sun Mar 24 15:57:49 2024 +0200
+
+    Update README.md
+
+[33mcommit 01061078b02293dfab79c1bd56f4dbcbbc0bb666[m
+Author: chaya kremer <66823881+CHAYA41182@users.noreply.github.com>
+Date:   Sun Mar 24 15:57:32 2024 +0200
+
+    Update README.md
+
+[33mcommit 41875be3e2190cf118ac9fa1a56fed8bec4c0fe2[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 15:55:47 2024 +0200
+
+    add readme file
+
+[33mcommit e4a29f4a4546f7e5ccc527d59b851e79978e6046[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 14:57:15 2024 +0200
+
+    Update MemberCard and HomePage components style
+
+[33mcommit f0b6fe9c976c05fd18ccfc724ad467428adab183[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 13:07:48 2024 +0200
+
+    Update routes and links for Corona information
+    add seedDataBase
+    add vaccine infomation
+
+[33mcommit 0f537b9b77a3d8c0bc9128f410d6842d407089e7[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Sun Mar 24 10:45:11 2024 +0200
+
+    Add react-apexcharts and ActiveCases page - graph active cases
+    fix bug in upload avatar img
+
+[33mcommit 828478d37542306abbac7be687277bf3a5a286df[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Fri Mar 22 17:11:18 2024 +0200
+
+    Add react-icons package and implement image upload functionality in the client side
+
+[33mcommit e740f58b31cb6ab8ef489a541368704b44e8f112[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Fri Mar 22 14:45:19 2024 +0200
+
+    update the API to using redux insted Axios
+
+[33mcommit 1dee5bee1f3e1e7f92f924bc0bd1a8ee7c2ee516[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Fri Mar 22 01:17:40 2024 +0200
+
+    Add image field to MemberForm and update imports in UpdateMember.js
+
+[33mcommit 5be4fe055951e000d62f94ecd5d3da2c5783d081[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Fri Mar 22 01:01:55 2024 +0200
+
+    update  MemberApi.js to include uploadMemberImage function
+
+[33mcommit 0cce72bdee0b34eef03ce4a8881e568fd3eaf54a[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Fri Mar 22 00:52:37 2024 +0200
+
+    Update MemberCard styling and layout, and add using in member image
+
+[33mcommit 9efeda92f74201cf4956706d9352f54ee53357df[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Thu Mar 21 23:59:45 2024 +0200
+
+    Add public folder to .gitignore
+
+[33mcommit 0dcde9c7da46d920ddb4a14c27bce9f351ccec78[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Thu Mar 21 23:18:48 2024 +0200
+
+    Add uploadImage functionality to MembersControllers and MemberService, and uploadMiddleware
+
+[33mcommit 05039a1f6a3299d5495441e0fc6c84ec742ebec2[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Thu Mar 21 22:40:23 2024 +0200
+
+    Add multer package as a dependency (for upload images)
+
+[33mcommit 7b817c02ef435cffe93bb6b9283e99143f3f6bfd[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Thu Mar 21 17:43:16 2024 +0200
+
+    add delete functionality, update memberList to wiew the new data
+
+[33mcommit 15939d60bcb5a8a80df67e6439cac1e55021f003[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Thu Mar 21 16:02:16 2024 +0200
+
+    fix bugs in updateMember
+
+[33mcommit e3870ddd1bf5a01e9961a2fe8be3eb81ac9157f4[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Thu Mar 21 14:21:41 2024 +0200
+
+    Add styling and display corona vaccination details in SingleMember component
+
+[33mcommit 7b7c902dcdb5de1926918772f1c982d419449bdd[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Thu Mar 21 12:40:41 2024 +0200
+
+    Add routes and components for member list and single member view
+
+[33mcommit f295ee9e8e762edcb51558a49665981eb7718b63[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 21:00:23 2024 +0200
+
+    add MemberCard.js and MemberCard.css
+
+[33mcommit d5d88e75fe4517aa5729a1180a2e077e72808d57[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 20:29:49 2024 +0200
+
+    Update maximum number of vaccinations to 4
+
+[33mcommit 3c8b87940c65395c56ab543b197b07623504c16f[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 20:25:44 2024 +0200
+
+    Update API base URL
+     add formik and yup dependencies
+    add formMember,
+    and validations on the form.
+
+[33mcommit d8dd35e68088b301cd09edc519073d72ca229c79[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 17:47:49 2024 +0200
+
+    Add axios dependency
+    add MemberApi.js file
+
+[33mcommit 7fc2e39228f67c61a427ceab4a842dba8a442300[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 17:41:48 2024 +0200
+
+    Update homepage layout and navigation texts
+
+[33mcommit ca2fcd239ee6ac402f67e65c99ad603a0f2833d3[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 17:34:43 2024 +0200
+
+    Add react-router-dom and add router in app.js
+
+[33mcommit be306ee738b4ce160193165ab713165b24e3d45d[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 16:48:58 2024 +0200
+
+    create react app
+
+[33mcommit 8c04f37ef36112aa8de2219e54d62f5f48c4fc20[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 16:31:23 2024 +0200
+
+    delete costum validations in  positiveTestDate and recoveryDate, becouse they don't work.
+
+[33mcommit 6b2a3a0cc4f95d42222462bc3a3e6890e6139746[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 16:25:27 2024 +0200
+
+    add validations to positiveTestDate and recoveryDate
+
+[33mcommit 73e8b9016efcf4048afef883f14dd69a5f3a49aa[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 16:13:59 2024 +0200
+
+    Fix formatting in connectDB function
+
+[33mcommit e71e796cee5294a938f3cae07d79cf5c9f64ffc8[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 16:12:51 2024 +0200
+
+    Remove console.log statement and update server.js
+
+[33mcommit e21431ea61ba21fc411a8afdf80f2caef7a64cbc[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 16:03:58 2024 +0200
+
+    Refactor error handling in MembersControllers and MemberService
+
+[33mcommit 8722d22d02132b36415c9aec0948643a3be4089a[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 15:54:23 2024 +0200
+
+    Refactor MembersControllers to use MemberService
+
+[33mcommit 074682a6bcdf15b70445868ace55373e54ba7ecc[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 15:49:07 2024 +0200
+
+    add MemberService file
+
+[33mcommit e12aba33ddf871e7382d4346adc58a96306d944e[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 15:38:47 2024 +0200
+
+    Refactor validation logic in ValidMember.js
+
+[33mcommit c877ec3d130ddcb897cd4a61444c8d4f02568577[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 15:37:19 2024 +0200
+
+    Update ValidMember.js validations
+
+[33mcommit 24c7562bfa0fd67ed7a6a37477bc145262a19ecb[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 15:35:26 2024 +0200
+
+    Add joi package and its dependencies
+    add validMember file to use validations
+
+[33mcommit 93341a1a77e7456ce94c53456f195351de85f470[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 15:34:47 2024 +0200
+
+    Update Member model - add validations
+
+[33mcommit 4241382e9e9295d0194fc0bb16b345f9032aeb0f[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 15:34:16 2024 +0200
+
+    Refactor createMember function to include date of birth and address
+
+[33mcommit 22b115091ea408d1d311d37106bc5a7aff2fa6c0[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 14:51:36 2024 +0200
+
+    Update MemberRoutes and server.js to use  MemberRoutes
+
+[33mcommit 90b0d511ab20a1211d1b6b74e2cabf733b957dda[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 14:47:34 2024 +0200
+
+    add MemberRoutes
+
+[33mcommit cbc93464de6ba8f64232019822dc99442340ec76[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 14:47:17 2024 +0200
+
+    Delete unused email validation, tz validation, and corona details validation functions
+
+[33mcommit 539dff77cf4b521a4b6114de63f1649ca8153489[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 14:43:38 2024 +0200
+
+    Refactor MembersControllers.js to use Member model
+    add getAll, create, update, delete
+
+[33mcommit d2f0d273c4a171719bb2448adddedc3b861c34ef[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 14:32:50 2024 +0200
+
+    Refactor getMembers function and update triangle perimeter calculation
+
+[33mcommit be7f22e21f7a827f5d12ac6820e4f00cb6563d0c[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 13:46:18 2024 +0200
+
+    update  Member model
+    Add validation and constraints to Member model
+
+[33mcommit 16d397ecfb164722e3630d14f73176c7f8ee692c[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Wed Mar 20 12:54:13 2024 +0200
+
+    add project-2 - writen in python
+
+[33mcommit 6a652478144ec9fc7706fd78f3a4e354f764d0a8[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 18:48:06 2024 +0200
+
+    Refactor coronaDetiles validation in createMember function
+
+[33mcommit 206849272414e8365bc5b4a7b254c28e3492456b[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 16:49:16 2024 +0200
+
+    Update CurrentStatus enum values in Member model
+
+[33mcommit 2d44015dfa04040167306efe1e9eefda1e27c874[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 16:46:49 2024 +0200
+
+    Remove 'required' property from email field in Member model
+
+[33mcommit 40143f7b43e48546d8c73dd84de8acbf5a9a164b[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 16:46:16 2024 +0200
+
+    Add validation for email and TZ,
+    update members model
+
+[33mcommit 9ea363a69b2515be1b45d8087d0fd1d01551adfa[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 15:49:08 2024 +0200
+
+    Refactor getMemberById to getMemberByTz in MembersControllers.js
+
+[33mcommit 30ac6fcc701394b82f27f5c89c6f25830883a9dc[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 15:48:28 2024 +0200
+
+    Add tz field to Member model
+
+[33mcommit 9abcb77948c009f479ef0a3d6fce566a7ef122fa[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 15:44:46 2024 +0200
+
+    Refactor Covid19DetilesForMember model and add coronaDetiles to Member model
+
+[33mcommit cdc86c0a597fea2fc46feaf0b002a7fbf8f8a0b7[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 15:40:47 2024 +0200
+
+    Remove extra lines in Covid19DetilesForMember.js
+
+[33mcommit e08ca600daaf2626b4839e66ba8fdc9c0e8b3ea2[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 15:33:09 2024 +0200
+
+    Update function to handle edge cases
+
+[33mcommit 31542f0ba0d8dbea49210170ae0acf219e52d237[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 01:17:06 2024 +0200
+
+[33mcommit cd692bb29321c6ed58f497088172cc5ff2061b4f[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 01:16:25 2024 +0200
+
+    add member table
+
+[33mcommit 9fbf88dc7e32e3e6c966c63da79ef81060244fa9[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 00:20:57 2024 +0200
+
+    Add cors and mongoose dependencies, update server.js to basic server
+
+[33mcommit 7e95d245ac329e0fa42a24b6878ccb8c7c186208[m
+Author: chaya41182 <chaya41182@gmail.com>
+Date:   Tue Mar 19 00:00:59 2024 +0200
+
+    add corsOption and connectDB
