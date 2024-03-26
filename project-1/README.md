@@ -91,7 +91,16 @@ install required packages:
 
 ### Architecture Overview
 
-The system architecture follows a typical client-server model with a RESTful API:
+The project follows an architecture pattern of the three layers: repository, services and controllers.
+
+###### Repository layer:
+The repository layer is responsible for interacting with the database. It contains the functions that retrieve the data from the database, including CRUD (Create, Read, Update, Delete) operations. In this project, we use the Mongoose ORM to define schemas and models, which are then used by the repository layer to perform database operations.
+
+##### Service Layer:
+The service layer contains the business logic of the application, and the holdings on the data. In this project the service layer uses the JOI package for validations.
+
+##### The controller layer:
+The controller layer acts as an interface between client-side requests and application logic. He receives incoming inquiries from the client, delegates them to the appropriate service for processing and sends the answer back to the client.
 
 #### Server-Side API Endpoints:
 
