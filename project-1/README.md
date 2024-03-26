@@ -110,7 +110,9 @@ The system utilizes middleware for file uploads using Multer to handle multipart
 #### Database Interaction:
 
 The server interacts with a MongoDB database using Mongoose ORM for defining schemas and models.
-Summary of the information in the database:
+
+schema of the information in the database:
+
 ![סכמת מסד נתונים drawio](https://github.com/CHAYA41182/hadasimProject/assets/66823881/48211721-795c-44ef-b69d-eec6ed06a30a)
 
 
