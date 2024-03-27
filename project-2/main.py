@@ -21,34 +21,31 @@ def print_triangle(width, height):
         print("The triangle cannot be printed.")
         return
 
-    # print the first level
-    print(" " * (width // 2) + "*")
+    # Print the first level
+    print(" " * ((width - 1) // 2) + "*")
 
     if width > 3:
-        # Calculate the number of levels without first and last (level is a set of rows in same width)
-        num_levels = (height - 1) // ((width - 1) // 2 - 1)
-        # Calculate the number of rows in each level
-        middle_rows = (height - 2) // num_levels
-        # Calculate the number of additional rows in the second level
-        remainder_rows = (height - 2) % num_levels
+        # Determine the number of lines in each level (level is set of lines in same width)
+        num_lines = (height - 2) // ((width - 2) // 2)
+
+        # Determine the remaining of lines to the second level
+        remaining_lines = (height - 2) % ((width - 2) // 2)
 
         # Print the second level
-        for i in range(middle_rows + remainder_rows):
-            print(" " * (width // 2 - 1) + "*" * 3)
+        for i in range(num_lines + remaining_lines):
+            print(" " * ((width - 3) // 2) + "*" * 3)
 
-        # print the rest of the levels
+        # Print the rest of the levels
         for i in range(5, width, 2):
-            for j in range(middle_rows):
-                print((" " * (width // 2 - ((i - 1) // 2)) + ("*" * i)))
+            for j in range(num_lines):
+                print(" " * ((width - i) // 2) + "*" * i)
 
-    # print the second level if width is 3 or 1 - when width of the second level is same as the last level
     else:
         for i in range(height - 2):
             print("*" * width)
 
-    # print the last level
-    if height > 1:
-        print("*" * width)
+    # Print the last level
+    print("*" * width)
 
 
 def calculate_triangle_perimeter(width, height):
