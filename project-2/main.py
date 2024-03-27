@@ -2,10 +2,12 @@ def get_shape_number():
     choice_shape = input("choose which shape you want: 1 for rectangle, 2 for triangle, or 3 to exit: ")
     return choice_shape
 
+
 def get_height_and_width():
     width = int(input("enter width:"))
     height = int(input("enter height:"))
     return width, height
+
 
 def print_rectangle(width, height):
     if width == height or abs(width - height) > 5:
@@ -19,25 +21,38 @@ def print_triangle(width, height):
         print("The triangle cannot be printed.")
         return
 
+    # print the first level
     print(" " * (width // 2) + "*")
 
     if width > 3:
-        divisor = ((width + 1) // 2 - 2)
-        middle_rows = (height - 2) // divisor
-        reminder_rows = (height - 2) % divisor
+        # Calculate the number of levels without first and last (level is a set of rows in same width)
+        num_levels = (height - 1) // ((width - 1) // 2 - 1)
+        # Calculate the number of rows in each level
+        middle_rows = (height - 2) // num_levels
+        # Calculate the number of additional rows in the second level
+        remainder_rows = (height - 2) % num_levels
 
-        for i in range(middle_rows + reminder_rows):
+        # Print the second level
+        for i in range(middle_rows + remainder_rows):
             print(" " * (width // 2 - 1) + "*" * 3)
 
+        # print the rest of the levels
         for i in range(5, width, 2):
             for j in range(middle_rows):
                 print((" " * (width // 2 - ((i - 1) // 2)) + ("*" * i)))
 
+    # print the second level if width is 3 or 1 - when width of the second level is same as the last level
+    else:
+        for i in range(height - 2):
+            print("*" * width)
+
+    # print the last level
     if height > 1:
         print("*" * width)
 
 
 def calculate_triangle_perimeter(width, height):
+    # using Pythagorean theorem to calculate the perimeter, assuming the triangle is isosceles triangle
     print("perimeter:", width + 2 * ((width / 2) ** 2 + height ** 2) ** 0.5)
 
 
