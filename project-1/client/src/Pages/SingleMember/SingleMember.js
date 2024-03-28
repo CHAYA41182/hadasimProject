@@ -21,10 +21,9 @@ const SingleMember = () => {
 
     const handleDelete = async () => {
         try {
+            console.log(id);
             await deleteMember(id);
-            if (isSuccessDelete) {
-                navigate('/members');
-            }
+            navigate('/members');
         } catch (error) {
             console.log(error);
         }

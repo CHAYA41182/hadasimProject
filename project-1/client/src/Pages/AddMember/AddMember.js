@@ -12,9 +12,8 @@ const AddMember = () => {
             console.log(values);
             await addMember(values);
             console.log("member added");
-            if (isSuccess) {
-                navigate('/members');
-            }
+            navigate('/members');
+            
         } catch (error) {
             console.log(error);
         }
