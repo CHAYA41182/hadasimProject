@@ -31,11 +31,18 @@ additionally, the following packages were used:
 ## Getting Started
 
 ### Prerequisites
+
+* MongoDB
+   https://www.mongodb.com/try/download/community
+
+* Node.js
+   https://nodejs.org/en/download/  
+
 * npm
-  ```sh
-  npm install npm@latest -g
-  ```
-  
+   ```sh
+   npm install npm@latest -g
+   ```
+
 ### Installation
  Clone the repo
 ```sh
