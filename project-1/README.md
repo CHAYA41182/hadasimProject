@@ -140,7 +140,7 @@ The server interacts with a MongoDB database using Mongoose ORM for defining sch
 
 schema of the information in the database:
 
-![סכמת מסד נתונים drawio](https://github.com/CHAYA41182/hadasimProject/assets/66823881/48211721-795c-44ef-b69d-eec6ed06a30a)
+![Uploading סכמת מסד נתונים.drawio (1).png…]()
 
 
 
