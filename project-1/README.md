@@ -42,6 +42,17 @@ additionally, the following packages were used:
    git clone https://github.com/CHAYA41182/hadasimProject
 ```
 ###### server side:
+
+create a .env file in the server folder based on the provided .env.example file. You can do this by copying the contents of .env.example, adjusting the values as needed to match your environment configuration, and saving it as .env. This file should contain all the necessary environment variables required for the project to function correctly.
+
+you can use the following command to create the .env file:
+```sh
+    cd project-1
+    cd server
+    cp .env.example .env
+```
+
+
 install required packages:
 ```sh
     cd project-1
