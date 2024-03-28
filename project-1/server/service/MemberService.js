@@ -1,4 +1,4 @@
-const MemberRepository = require('../repositories/MemberRepository');
+const MemberRepository = require('../repository/MemberRepository');
 const { validCreateMember, validUpdateMember } = require('../validations/ValidMember');
 
 const getMembers = async () => {
